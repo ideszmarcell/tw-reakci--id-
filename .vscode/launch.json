@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Vite",
+      "type": "msedge",
+      "request": "launch",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "trace": true,
+      "sourceMapPathOverrides": {
+        "webpack:///*": "${webRoot}/*"
+      }
+    }
+  ]
+}

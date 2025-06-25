@@ -1,0 +1,44 @@
+{
+  "name": "html-tailwindcss-vite-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+    "@typescript-eslint/eslint-plugin": "8.25.0",
+    "@typescript-eslint/parser": "8.25.0",
+    "eslint": "9.21.0",
+    "eslint-config-prettier": "^10.0.2",
+    "eslint-plugin-prettier": "^5.2.3",
+    "prettier": "^3.5.3",
+    "prettier-plugin-organize-attributes": "^1.0.0",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.9",
+    "tailwindcss": "^4.0.9"
+  },
+  "prettier": {
+    "plugins": [
+      "@ianvs/prettier-plugin-sort-imports",
+      "prettier-plugin-organize-attributes",
+      "prettier-plugin-tailwindcss"
+    ],
+    "importOrderParserPlugins": ["typescript"],
+    "importOrderTypeScriptVersion": "5.0.0",
+    "importOrderCaseSensitive": false,
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "endOfLine": "auto"
+  }
+}
