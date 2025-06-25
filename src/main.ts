@@ -12,6 +12,7 @@ function drawChart() {
     chart.style.marginTop = "26px";
     chart.style.width = "100%";
     chart.style.background = "#f5f5f5";
+    chart.style.overflow = "hidden";
     eredmeny.parentElement!.appendChild(chart);
   }
   chart.innerHTML = "";
@@ -31,8 +32,9 @@ function drawChart() {
 
   // Tengelyek mindig legyenek
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-  svg.setAttribute("width", w.toString());
+  svg.setAttribute("width", "100%");
   svg.setAttribute("height", h.toString());
+  svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
   svg.style.display = "block";
   const axisColor = "#888";
   const topMargin = 26;
@@ -215,3 +217,4 @@ document.getElementById("content")!.addEventListener("click", számol);
 window.addEventListener("DOMContentLoaded", () => {
   drawChart();
 });
+window.addEventListener("resize", drawChart);
