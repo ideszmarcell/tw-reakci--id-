@@ -8,17 +8,18 @@
 
     <title>Jedlik - Reakció idő</title>
   </head>
-<body>
-  <div class="flex min-h-screen items-center justify-center bg-gray-100">
-    <div class="space-y-3 w-full max-w-md rounded-2xl bg-white p-6 drop-shadow-lg">
-      <h1 class="text-xl font-bold mb-6 content-center text-center">Reakció idő vizsgáló</h1>
-      <button id="content" class="p-4 h-25 w-full bg-gray-200 rounded-2xl shadow text-center"><span >Kattints ide a mérés kezdéséhez.</span></button>
-      <div id="Eredmény" class="rounded bg-gray-200 p-4 mt-6 shadow-md h-20">
-        <p id="Eredmény" class="text-center">Eredmények:</p>
-        
+  <body>
+  <div class="flex min-h-screen items-center justify-center bg-gray-100 px-2">
+    <div class="w-full max-w-xl md:max-w-2xl space-y-3 rounded-2xl bg-white p-4 sm:p-6 drop-shadow-lg">
+      <h1 class="mb-6 text-center text-xl font-bold">Reakció idő vizsgáló</h1>
+      <button class="w-full rounded-2xl bg-gray-200 p-4 text-center shadow transition hover:bg-gray-300" id="content">
+        <span>Kattints ide a mérés kezdéséhez.</span>
+      </button>
+      <div class="mt-6 h-20 rounded bg-gray-200 p-4 shadow-md w-full overflow-x-auto" id="Eredmény">
+        <p class="text-center">Eredmények:</p>
       </div>
     </div>
   </div>
-    <script type="module" src="src/main.ts"></script>
-  </body>
+  <script type="module" src="src/main.ts"></script>
+</body>
 </html>
