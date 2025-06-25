@@ -12,4 +12,10 @@
     "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
+    "git.branchProtection": [
+        "main"
+    ],
+    "files.autoSave": "afterDelay",
+    "git.branchProtectionPrompt": "alwaysCommitToNewBranch",
+    "git.enableSmartCommit": true
 }
